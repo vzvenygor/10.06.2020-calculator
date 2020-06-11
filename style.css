@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  font-size: 24px;
+}
+
+@font-face {
+  font-family: RobotoCondensed;
+  src: url(fonts/RobotoCondensed-Regular.ttf);
+}
+
+.calc-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-header-background {
+  position: relative;
+  max-height: 400px;
+  width: 100%;
+}
+
+.calc-header-logo {
+  position: absolute;
+  max-height: 300px;
+}
+
+.calc-main-title {
+  font-family: RobotoCondensed, regular;
+  font-size: 32px;
+  text-align: center;
+  margin: 30px;
+}
+
+.calc-main-form-title {
+  font-family: RobotoCondensed, regular;
+  margin: 20px 30px;
+}
+
+form {
+  margin-left: 40px;
+}
+
+.calc-main-description {
+  margin: 20px;
+}
+
+.calk-main-result {
+  text-align: center;
+  margin: 40px;
+}
+
+.calc-footer-nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.calc-footer-nav-button {
+  margin-right: 40px;
+}
+
+.calc-footer-background {
+  background-image: url(img/bg\ rgb.jpg);
+  width: 100%;
+  height: 200px;
+}
+
+.calc-footer-copyright {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 150px;
+}

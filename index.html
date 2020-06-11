@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Здорова Родина | Он-лайн калькулятор калорій</title>
+</head>
+<body>
+  <header>
+      <div class="calc-header">
+          <img src="img/bg rgb.jpg" alt="Background" class="calc-header-background">
+          <img src="img/лого PNG.png" alt="Logo" class="calc-header-logo">
+      </div>
+  </header>
+  <main>
+    <h1 class="calc-main-title">ОН-ЛАЙН КАЛЬКУЛЯТОР КАЛОРІЙ</h1>
+    <form id="calc-main-form">
+        <h3 class="calc-main-form-title">Ваша стать</h3>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Чоловіча</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Жіноча</label>
+       
+        <h3 class="calc-main-form-title">Ваш зріст (у см)</h3>
+        <input type="number" id="height" name="height" min="1" required>
+
+        <h3 class="calc-main-form-title">Ваша вага (кг)</h3>
+        <input type="number" id="weight" name="weight" required>
+
+        <h3 class="calc-main-form-title">Ваш вік</h3>
+        <input type="number" id="age" name="age" min="15" max="100" required>
+
+        <h3 class="calc-main-form-title">Рівень Вашої активності</h3>
+        <input type="radio" id="minActivity" name="activityLevel" value="1.2" required>
+        <label for="minActivity">Мінімальні фізичні навантаження (малорухливий спосіб життя)</label>
+        <br>
+        <input type="radio" id="lowActivity" name="activityLevel" value="1.375">
+        <label for="lowActivity">Низький рівень навантаження (заняття спортом 1-2 рази на тиждень)</label>
+        <br>
+        <input type="radio" id="medActivity" name="activityLevel" value="1.55">
+        <label for="medActivity">Середній рівень навантаження (заняття спортом 3-5 разів на тиждень)</label>
+        <br>
+        <input type="radio" id="hiActivity" name="activityLevel" value="1.725">
+        <label for="hiActivity">Високий рівень навантаження (щоденне фізичне навантаження або важка фізична праця)</label>
+        <br>
+        <input type="radio" id="superActivity" name="activityLevel" value="1.9">
+        <label for="superActivity">Максимальний рівень навантаження (професійні спротсмени)</label>
+
+        <h3 class="calc-main-form-title">Скільки хотіли б скинути за місяць</h3>
+        <input type="radio" id="" name="weightGoal" value="availableWeight">
+        <label for="availableWeight">Хочу підтримувати наявну вагу</label>
+        <br>
+        <input type="radio" id="" name="weightGoal" value="2kg">
+        <label for="2kg">2 кілограми</label>
+        <br>
+        <input type="radio" id="" name="weightGoal" value="4kg">
+        <label for="4kg">4 кілограми</label>
+        <br>
+        <input type="radio" id="" name="weightGoal" value="6kg">
+        <label for="6kg">6 кілограми</label>
+        <br>
+        <button class="calk-main-result-button" type="submit">Розрахувати!</button>
+        <input type="submit" value="hello">
+    </form>
+
+    <div class="calk-main-result">
+        <p id="result"></p>   
+    </div>
+
+
+    <p class="calc-main-description">
+        Розрахунок калорій реалізовано за формулою Міффліна - Сан-Жеора. У даний час Американська асоціація дієтологів визнає цю формулу найбільш точною серед подібних.
+        <br>
+        Майте на увазі, що результати нашого он-лайн калькулятора калорій мають рекомендаційний характер. У разі, якщо Ви вирішили набрати або скинути вагу – проконсультуйтеся із Вашим лікарем.
+        <br>
+        Для розрахунку денної норми калорій заповніть усі поля.   
+        <br>
+    </p>
+    <script src="script.js"></script>
+  </main>
+  <footer>
+      <ul class="calc-footer-nav">
+          <li><button class="calc-footer-nav-button">Наш сайт</button></li>
+          <li><button class="calc-footer-nav-button">Ми у Facebook</button></li>
+          <li><button class="calc-footer-nav-button">Ми в Telegram</button></li>
+          <li><button class="calc-footer-nav-button">Ми в YouTube</button></li>
+      </ul>
+      <div class="calc-footer-background">
+      <p class="calc-footer-copyright">&copy; 2020 "Здорова Родина"</p>
+      </div>>
+  </footer> 
+  <script src="script.js"></script>   
+</body>
+</html>
